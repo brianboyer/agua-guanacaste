@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    
     <title>agua-guanacaste</title>
 
     <meta name="description" content="An opinionated project template for (mostly) server-less apps.">
@@ -124,32 +127,21 @@
     <a class="sr-only" href="#content">Skip To Content</a>
 
     
-    <nav role="navigation">
-        <ul class="site-links">
-            <li class="npr"><a href="http://npr.org"><img src="http://media.npr.org/chrome/news/nprlogo_138x46.gif" alt="NPR" /></a></li>
-            <li class="news"><a href="http://www.npr.org/sections/news/">News</a></li>
-            <li class="arts"><a href="http://www.npr.org/sections/arts/">Arts &amp; Life</a></li>
-            <li class="music"><a href="http://www.npr.org/music/">Music</a></li>
-            <li class="listen"><a href="http://www.npr.org/listen/">Listen</a></li>
-        </ul>
-        <ul class="social-links">
-            <li class="twitter"><a rel="external" href="http://twitter.com/share?text=agua-guanacaste&amp;url=http%3A%2F%2Fapps.npr.org%2Fagua-guanacaste%2F" alt="Share on Twitter" target="_blank" onclick="_gaq.push(['_trackEvent', 'Social', 'Click Twitter In Navbar', 'agua-guanacaste']);">Share This Page On Twitter</a></li>
-            <li class="facebook"><a rel="external" href="https://www.facebook.com/dialog/feed?app_id=138837436154588&amp;link=http%3A%2F%2Fapps.npr.org%2Fagua-guanacaste%2F&amp;name=agua-guanacaste&amp;picture=&amp;redirect_uri=http%3A%2F%2Fapps.npr.org%2Fagua-guanacaste%2F" alt="Share on Facebook" target="_blank" onclick="_gaq.push(['_trackEvent', 'Social', 'Click Facebook In Navbar', 'agua-guanacaste']);">Like This Page On Facebook</a></li>
-        </ul>
-        <ul class="site-links-2">
-            <li class="stations"><a href="http://www.npr.org/templates/stations/stations/">Stations</a></li>
-            <li class="donate"><a href="http://www.npr.org/stations/donate/index.php">Donate</a></li>
-            <li class="shop"><a href="http://shop.npr.org">Shop</a></li>
-        </ul>
-    </nav>
 
     
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h1>Across-The-Top Header</h1>
-                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+            <div class="col-md-4 introduction">
+                <h1>Guanacaste con sed de agua potable</h1>
+                <h2>La siguiente aplicación permite además a la población conocer cuál es la calidad de agua que está consumiendo actualmente, según el lugar donde habita, así como identificar las características de su proveedor.
+Anímese a ver qué está pasando en su cantón.</h2>
+                <div id="story-meta">
+                    <p class="byline">by <span>Patricia Recio, Bryan Gutiérrez, Brian Boyer, Luisanna Barboza, Lia Valero, Ethel Araya</span></p>
+                    <p class="dateblock">
+                        <span class="date">12/13/2013</span>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -159,84 +151,114 @@
     <section id="content">
         <div class="container">
             <div class="row">
-                <div id="main-content" class="col-md-8">
+                <div id="main-content" class="col-md-12">
                     
-<h1>agua-guanacaste</h1>
-<div id="story-meta">
-    <p class="byline">by <span>Name Here</span></p>
-    <p class="dateblock">
-        <span class="date">January 22, 2013</span>
-        <span class="time"> 3:37 AM</span>
-    </p>
-</div>
 
 <!-- <h2>Example COPY list</h2>
 <dl>
     
-    <dt>jabberwocky</dt><dd>Invented or meaningless language; nonsense.</dd>
-    
-    <dt>Antioch</dt><dd>Land of the Holy Hand Grenade.</dd>
-    
-    <dt>swallow</dt><dd>What kind?</dd>
-    
 </dl> -->
 
-<div id="canton_list"></div>
+<section id="home">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+            <div id="canton_list"></div>
+        </div>
+        <div class="col-md-7">
+            <iframe width='100%' height='650' frameborder='0' src='http://chiboha.cartodb.com/viz/d5510bae-6426-11e3-b822-77a598472a10/embed_map?title=false&description=false&search=false&shareable=false&cartodb_logo=true&layer_selector=false&legends=true&scrollwheel=false&sublayer_options=1&sql=&sw_lat=9.817329187067783&sw_lon=-86.6107177734375&ne_lat=11.140676776401103&ne_lon=-83.9739990234375'></iframe>
+            <p>Conozca el porcentaje de personas que tienen acceso a agua potable en el cantón.</p>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    
+    <div class="row super-article">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1>8% de los guanacastecos consume agua no potable</h1>
+            El agua que utilizan 28.654 personas de la provincia de Guanacaste no es apta para el consumo humano, según un análisis de datos de un estudio sobre la calidad del agua, elaborado por el Área de Microbiología, Laboratorio Nacional de Aguas, AyA en el 2012 y el  Censo de Población de 2011.<br><br/>. Esa cifra representa un 8% de la población que reside en la provincia.<br><br/>Mientras el promedio de habitantes con acceso a agua potable en el país es del 97% según informes de AyA. En Guanacaste la zona con mayor promedio de usuarios con esta característica es de 92% y corresponde al cantón de Cañas.<br><br/> En el caso de los habitantes de ese cantón que reciben agua de acueductos rurales, el porcentaje se reduce a un 64,3%. <br><br/> En el otro extremo del total de vecinos del cantón de Hojancha que reciben el servicio de parte de un acueducto municipal, que en este caso opera mediante un convenio con la Empresa de Servicios Públicos de Heredia, el 70% consume agua que no es apta para el consumo humano. <br><br/> Además, solo una tercera parte de la población recibe agua del Instituto Costarricense de Acueductos y Alcantarillados- AyA. El resto se abastece de acueductos comunales, Asadas y otras fuentes como pozos o ríos, donde los porcentajes de potabilidad son más reducidos.<br><br/> Así, el AyA brinda servicio a  92.388 hogares, lo que representa el 54.9% de la población total y los diferentes acueductos comunales abastecen a 45.361 viviendas, 27% de la población. El resto se distribuye entre acueductos municipales, empresariales y gran cantidad de hogares se abastecen de agua de pozo, ríos o quebradas. <br><br/> Lo anterior evidencia que entre los factores a los que se atribuye el problema de la falta de potabilidad en esta región es la gran cantidad de acueductos rurales, comunales y municipales que brindan el servicio y la falta de regulación sobre estos. <br><br/>Otro de los hechos que ha afectado en la baja de los niveles de potabilidad es la presencia de arsénico en el agua, un problema que aunque el AyA ha intentado paliar, luego de que la Sala fallara a favor de los habitantes y le ordenara garantizar el acceso al agua segura para el consumo humano, emprendiera una serie de acciones de emergencia como la colocación de filtros y el suministro de agua por medio de cisternas.
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    
+    <div class="row story-list-header">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1>Historias: El agua en la perspectiva de la comunidad</h1>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    
+    <div class="row story">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <a href="http://www.nacion.com/nacional/servicios-publicos/AyA-Guanacaste-Zona-Norte-millones_0_1361264004.html">
+                <img src="img/IMG_6675.jpg" />
+            </a>
+        </div>
+        <div class="col-md-4">
+            <h3><a href="http://www.nacion.com/nacional/servicios-publicos/AyA-Guanacaste-Zona-Norte-millones_0_1361264004.html">AyA colocará sistemas de remoción de arsénico en Guanacaste</a></h3>
+            <p>La división de Contratación Administrativa de la Contraloría, autorizó la contratación de dichos sistemas por un monto de ¢1.000 millones, con el fin de atender el problema en los acueductos de ASA5-Vuelta de Kooper de Aguas Zarcas, Cristo Rey de Los Chiles, Santa Cecilia de Los Chiles, Montenegro-Agua Caliente de Bagaces, Falconiana de Bagaces, El Recreo-Quintas don Miguel-Río Piedras y la Lobra de Bagaces y Bebedero de Cañas; los cuales según la resolución poseen fuentes  de agua que contienen concentraciones de arsénico por encima del valor máximo admisible establecido por la normativa nacional.</p>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+        
+        <div class="row story">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <a href="http://www.nacion.com/archivo/Sala-IV-Salud-AyA-poblaciones_0_1345865486.html">
+                    <img src="img/IMG_6648.jpg" />
+                </a>
+            </div>
+            <div class="col-md-4">
+                <h3><a href="http://www.nacion.com/archivo/Sala-IV-Salud-AyA-poblaciones_0_1345865486.html">Sala IV ordena suministrar agua potable a poblaciones afectadas por arsénico</a></h3>
+                <p>Por votación unánime, siete magistrados acordaron el 5 de junio  declarar con lugar un recurso de amparo interpuesto por Edwin Acuña Arguedas y otros vecinos de 24 pueblos que desde hace más de un año padecen el problema de que el agua les llega contaminada.</p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </a>
+    <a href="http://www.nacion.com/archivo/Sala-IV-Salud-AyA-poblaciones_0_1345865486.html">
+        <div class="row story">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <a href="http://www.nacion.com/nacional/comunidades/Falta-obliga-reducir-clases-Canas_0_1178482173.html">
+                    <img src="img/IMG_6656.jpg" />
+                </a>
+            </div>
+            <div class="col-md-4">
+                <h3><a href="http://www.nacion.com/nacional/comunidades/Falta-obliga-reducir-clases-Canas_0_1178482173.html">Falta de agua obliga a reducir horario de clases en Cañas</a></h3>
+                <p>La escasez de agua en Guanacaste obligó a los docentes del Liceo Rural La Esperanza de Santa Cruz, a reducir las horas de clase a sus 80 estudiantes.Al no tener agua para la limpieza de las instalaciones, evacuar los servicios sanitarios o preparar el almuerzo, los muchachos, que antes salían a las 2 p. m., salen ahora al mediodía.</p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </a>
+</section>
+
+<div class="row chicas">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <p><i>Este proyecto fue realizado en tres días durante el evento de Chicas Poderosas, en Nicoya, Costa Rica. Muchas gracias a Mariana Santos y Giannina Segnini, y los patrocinadores de Chicas Poderosas por una experiencia tan enriquecedora.</i></p>
+    </div>
+    <div class="col-md-2"></div>
+</div>
 
 <div id="cantons"></div>
 
 
-                </div>
-                <div id="bigbox" class="col-md-4">
-                    
-                    <div class="adwrapper">
-                        <div class="sponsor300">
-                            <script type="text/javascript">
-                            <!--
-                            if (DFP.shouldRenderForDevice('desktop')) {
-                                googletag.cmd.push(function() { googletag.display('ad-desktop'); });
-                            }
-                            // -->
-                            </script>
-                        </div>
-                        <p class="left">NPR thanks our sponsors</p>
-                        <p class="right"><a href="http://www.npr.org/about/place/corpsupport/">Become an NPR sponsor</a></p>
-                    </div>
+
+
                 </div>
             </div>
             
-<div class="row">
+<!-- <div class="row">
     <div class="col-md-12">
-        <h2>This content goes to 12</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2>COPY.content.footer_title [key does not exist]</h2>
+        <p>COPY.content.lorem_ipsum [key does not exist]</p>
     </div>
-</div>
+</div> -->
 
         </div>
     </section>
-
-    <footer>
-        <div class="primary">
-            <ul>
-                <li><a href="http://www.npr.org" data-action="Click Logo"><img src="http://media.npr.org/chrome/news/nprlogo_138x46.gif" alt="NPR Logo"></a></li>
-                <li class="news"><a href="http://www.npr.org/sections/news/">News</a></li>
-                <li class="artslife"><a href="http://www.npr.org/sections/arts/">Arts &amp; Life</a></li>
-                <li class="music"><a href="http://www.npr.org/music/">Music</a></li>
-                <li class="programs"><a href="http://www.npr.org/programs/">Programs</a></li>
-                <li class="listen"><a href="http://www.npr.org/listen/">Listen</a></li>
-                <li class="about"><a href="http://www.npr.org/about/">About</a></li>
-            </ul>
-        </div>
-        <div class="secondary">
-            <p>&copy;2013 NPR</p>
-            <ul>
-                <li id="footerContact"><a href="http://help.npr.org/npr/includes/customer/npr/custforms/contactus.aspx">Contact</a></li>
-                <li><a href="http://www.npr.org/about/termsofuse.html">Terms of Use</a></li>
-                <li><a href="http://www.npr.org/about/privacypolicy.html">Privacy</a></li>
-                <li><a href="http://thin.npr.org/">Text-Only</a></li>
-            </ul>
-        </div>
-    </footer>
 
     
     <div id="adhesion">

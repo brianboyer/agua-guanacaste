@@ -1,6 +1,6 @@
-<h2>Click a canton for more detail</h2>
+<h4><%= COPY.content.canton_list_header %></h4>
 <ul>
     <% _.each(cantons, function(canton){ %>
-        <li><a rel-data="<%= canton.slug %>"><%= canton.nombre %></li>
+        <li><a rel-data="<%= canton.slug %>"><%= canton.nombre %></a></li>
     <% }) %>
 <ul>

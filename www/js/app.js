@@ -1,3 +1,6 @@
+// Load the Visualization API and the piechart package.
+google.load('visualization', '1.0', {'packages':['corechart']});
+
 $(function() {
     var context = $.extend(APP_CONFIG, {
         'template_path': 'jst/example.html',
@@ -23,17 +26,88 @@ $(function() {
     $canton_list.html(JST.canton_list(context));
     $cantons.html(JST.cantons(context));
     
-    $cantons.find('a#home-link').click(function(){
+    var $home_link = $cantons.find('a#home-link');
+    
+    $home_link.click(function(){
         $cantons.find('section.canton').hide();
         $home.show();
+        $home_link.hide();
     });
     
     $canton_list.find('a').click(function(){
         var slug= this.getAttribute('rel-data');
         $home.hide();
+        $home_link.css( "display", "block");
         $cantons.find('section.canton').hide();
         $cantons.find('section.canton#' + slug).show();
     });
+    
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.setOnLoadCallback(drawChart);
+    google.setOnLoadCallback(drawChart2);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart() {
+    
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Compania');
+      data.addColumn('number', 'Porcentajes');
+      data.addRows([
+        ['AyA', 56.91],
+        ['ASADAS', 11.65],
+        ['Luvia', 2.13],
+        ['Pozo', 3.36],
+        ['Rio/Quebrada', 1.42],
+        ['Muninicipal', 25.89],
+        ['Empresa', 0.22],
+        ['Otra Fuente', 0.48],
+        ['No Aplica', 0.08]
+      ]);
+    
+      // Set chart options
+      var options = {'title':'Abangares',
+                     'width':400,
+                     'height':300};
+    
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+
+          // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart2() {
+    
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Compania');
+      data.addColumn('number', 'Porcentajes');
+      data.addRows([
+        ['AyA', 54.99],
+        ['ASADAS', 27],
+        ['Luvia', 2.13],
+        ['Pozo', 4.31],
+        ['Rio/Quebrada', 4],
+        ['Muninicipal', 10.54],
+        ['Empresa', 0.27],
+        ['Otra Fuente', 0.69],
+        ['No Aplica', 0.08]
+      ]);
+    
+      // Set chart options
+      var options = {'title':'Guanacaste',
+                     'width':400,
+                     'height':300};
+    
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.PieChart(document.getElementById('chart2_div'));
+      chart.draw(data, options);
+    }
     
     
 });
