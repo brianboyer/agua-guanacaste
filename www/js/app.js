@@ -34,4 +34,6 @@ $(function() {
         $cantons.find('section.canton').hide();
         $cantons.find('section.canton#' + slug).show();
     });
+    
+    
 });
