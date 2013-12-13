@@ -1,0 +1,31 @@
+<a id="home-link">&laquo; Back to summary</a>
+<% _.each(cantons, function(canton){ %>
+    <section id="<%= canton.slug %>" class="canton">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Canton: <%= canton.nombre %> (population <%= canton.poblacion %>)</h2>
+                <h3><%= canton.headline %></h3>
+                <h3><%= canton.porcentaje_abonado_potable %> of users have potable water</h3>
+                <h3><%= canton.total_viviendas %> houses recieve water in this canton.</h3>
+            </div>
+            <div class="col-md-8">
+                <iframe width='100%' height='650' frameborder='0' src='http://chiboha.cartodb.com/viz/31a435b8-6434-11e3-a7c4-cd26f2e8dd49/embed_map?title=false&description=false&search=false&shareable=false&cartodb_logo=true&layer_selector=false&legends=true&scrollwheel=false&sublayer_options=1&sql=&sw_lat=10.10407813498404&sw_lon=-85.33767700195312&ne_lat=10.435143823666877&ne_lon=-84.67849731445312'></iframe>
+            </div>
+        </div>
+        
+        <div class="row">
+            <h3>Servidores</h3>
+            <table>
+                <tr><th></th><th></th></tr>
+                <tr><td class="nombre">Cooperativa</td><td><%= canton.porcentaje_acueducto_empresa_cooperativa %></td><td><%= COPY.content.provider_explanation_empresa %></td></tr>
+                <tr><td class="nombre">Aya</td><td><%= canton.porcentaje_acueducto_aya %></td><td><%= COPY.content.provider_explanation_aya %></td></tr>
+                <tr><td class="nombre">Municipal</td><td><%= canton.porcentaje_acueducto_municipal %></td><td><%= COPY.content.provider_explanation_municipal %></td></tr>
+                <tr><td class="nombre">Asada</td><td><%= canton.porcentaje_acueducto_comunal_asada %></td><td><%= COPY.content.provider_explanation_asada %></td></tr>
+                <tr><td class="nombre">Otra Fuente</td><td><%= canton.porcentaje_otra_fuente %></td><td><%= COPY.content.provider_explanation_otra_fuente %></td></tr>
+                <tr><td class="nombre">Pozo</td><td><%= canton.porcentaje_pozo %></td><td><%= COPY.content.provider_explanation_pozo %></td></tr>
+                <tr><td class="nombre">Rio</td><td><%= canton.porcentaje_rio %></td><td><%= COPY.content.provider_explanation_rio %></td></tr>
+            </table>
+        </div>
+        
+    </section>
+<% }) %>

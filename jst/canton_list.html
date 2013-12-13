@@ -1,0 +1,6 @@
+<h2>Click a canton for more detail</h2>
+<ul>
+    <% _.each(cantons, function(canton){ %>
+        <li><a rel-data="<%= canton.slug %>"><%= canton.nombre %></li>
+    <% }) %>
+<ul>

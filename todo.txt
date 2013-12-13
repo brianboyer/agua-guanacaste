@@ -1,0 +1,30 @@
+X List of canton links
+X Basic sheet for each canton
+X Get data into a json doc
+X * list of cantons, with their attributes
+X Canton: List of providers
+X Canton: Details on provider list
+X Canton: Details about the canton
+X Canton: Explanation of each provider
+X Homepage: Map of Guanacaste % potable water
+X Wire up the copy rig
+
+Canton: Headline per
+Homepage: Headline
+Homepage: Explanation of what this is
+Homepage: Caption for the map
+Homepage: Header photo
+Homepage: List of stories about this issue
+Homepage: Photos for stories about this issue
+Map with canton links
+Canton: Map of districts
+Canton: Pie chart of water providers for this canton
+Canton: Pie chart of water providers for Guanacaste
+Canton: Pie chart of water providers for Costa Rica
+
+Basic sheet for each districto
+* for each canton, list of districos with their attributes
+District: Pie chart of water providers for this district
+District: Pie chart of water providers for canton
+District: Pie chart of water providers for Guanacaste
+District: Pie chart of water providers for Costa Rica
