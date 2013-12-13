@@ -57,7 +57,7 @@ class Includer(object):
                 print 'Rendering %s' % out_filename
 
                 with open(out_filename, 'w') as f:
-                    f.write(self._compress())
+                    f.write(self._compress().encode('utf-8'))
 
             # See "fab render"
             g.compiled_includes.append(out_filename)
@@ -94,7 +94,7 @@ class JavascriptIncluder(Includer):
 
             with open('www/%s' % src) as f:
                 print '- compressing %s' % src
-                output.append(minify(f.read()))
+                output.append(minify(f.read()).decode('utf-8'))
 
         context = make_context()
         context['paths'] = src_paths
