@@ -8,18 +8,19 @@ X Canton: Details about the canton
 X Canton: Explanation of each provider
 X Homepage: Map of Guanacaste % potable water
 X Wire up the copy rig
+X Canton: Headline per
+X Homepage: Headline
+X Homepage: Explanation of what this is
+X Homepage: Caption for the map
+X Homepage: Header photo
+X Homepage: List of stories about this issue
+X Homepage: Photos for stories about this issue
+X Map with canton links
+X Canton: Map of districts
+X Canton: Pie chart of water providers for this canton
+X Canton: Pie chart of water providers for Guanacaste
 
-Canton: Headline per
-Homepage: Headline
-Homepage: Explanation of what this is
-Homepage: Caption for the map
-Homepage: Header photo
-Homepage: List of stories about this issue
-Homepage: Photos for stories about this issue
-Map with canton links
-Canton: Map of districts
-Canton: Pie chart of water providers for this canton
-Canton: Pie chart of water providers for Guanacaste
+Explanation: this is incomplete, a demo, and it's not the official work of NPR.
 Canton: Pie chart of water providers for Costa Rica
 
 Basic sheet for each districto
